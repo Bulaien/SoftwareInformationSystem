@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/SoftwareInformationSystem/static/css/main.4eecd6a0.css",
+    "main.js": "/SoftwareInformationSystem/static/js/main.bec97eef.js",
+    "static/media/logo.png": "/SoftwareInformationSystem/static/media/logo.433eefbe26aa680161f5.png",
+    "index.html": "/SoftwareInformationSystem/index.html",
+    "main.4eecd6a0.css.map": "/SoftwareInformationSystem/static/css/main.4eecd6a0.css.map",
+    "main.bec97eef.js.map": "/SoftwareInformationSystem/static/js/main.bec97eef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4eecd6a0.css",
+    "static/js/main.bec97eef.js"
+  ]
+}
