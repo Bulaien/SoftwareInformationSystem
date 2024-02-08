@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SoftwareInformationSystem/static/css/main.4eecd6a0.css",
-    "main.js": "/SoftwareInformationSystem/static/js/main.62cacfd0.js",
+    "main.js": "/SoftwareInformationSystem/static/js/main.75e11294.js",
     "static/media/logo.png": "/SoftwareInformationSystem/static/media/logo.433eefbe26aa680161f5.png",
     "index.html": "/SoftwareInformationSystem/index.html",
     "main.4eecd6a0.css.map": "/SoftwareInformationSystem/static/css/main.4eecd6a0.css.map",
-    "main.62cacfd0.js.map": "/SoftwareInformationSystem/static/js/main.62cacfd0.js.map"
+    "main.75e11294.js.map": "/SoftwareInformationSystem/static/js/main.75e11294.js.map"
   },
   "entrypoints": [
     "static/css/main.4eecd6a0.css",
-    "static/js/main.62cacfd0.js"
+    "static/js/main.75e11294.js"
   ]
 }
