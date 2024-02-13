@@ -25,14 +25,31 @@ const Data = () => {
 
     const News = () => {
         return (
-            newsLines.map((newsline, index) => (index < 6 ? <div className='newsi'>
-                <a href={newsline.url}>
-                    <h2 className='news'> {newsline.title}</h2>
-                    <p className='date'>{newsline.publishedAt.toLocaleString('de-DE')}</p>
-                    <p className='news'>{newsline.description}</p></a>
-            </div> : null
-            )
-            )
+         newsLines?   newsLines.map((newsline, index) => {
+
+
+                {
+
+                    return (index < 6 ? <div className='newsi'>
+
+                            <a href={newsline.url}>
+
+                                <h2 className='news'> {newsline.title}</h2>
+
+                                <p className='date'>{newsline.publishedAt.toLocaleString('de-DE')}</p>
+
+                                <p className='news'>{newsline.description}</p></a>
+
+                        </div> : null
+
+                    )
+
+                }
+
+                return null;
+
+            }):null
+
         )
     }
 
@@ -40,13 +57,13 @@ const Data = () => {
         return (
             <table>
                 <thead>
-                    <tr>
-                        <th>Version</th>
-                        <th>Release-Datum</th>
-                        <th>LTS</th>
-                        <th>Support</th>
-                        <th>EOL</th>
-                    </tr>
+                <tr>
+                    <th>Version</th>
+                    <th>Release-Datum</th>
+                    <th>LTS</th>
+                    <th>Support</th>
+                    <th>EOL</th>
+                </tr>
                 </thead>
 
 
