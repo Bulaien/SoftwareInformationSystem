@@ -7,7 +7,7 @@ const Data = () => {
     const [outputData, setOutputData] = useState([]);
     const [number, setNumber] = useState(5)
     const [newsLines, setNewsLines] = useState([])
-    const apikey = process.env.REACT_APP_API_KEY
+    
 
 
     useEffect(() => {
@@ -24,46 +24,39 @@ const Data = () => {
     }, []);
 
     const News = () => {
-        return (
-         newsLines?   newsLines.map((newsline, index) => {
+        
+        
+            
+             
+           return (
+           
+            <div className='newsi'>
 
+            <a href={newsLines.url}  target="_blank">
+                <h2 className='news'>Homepage: </h2>
+                <p>{newsLines.url}</p>
+            </a>
+            <a href={newsLines.download} target="_blank">
+                <h2 className='news'>Download: </h2>
+                <p>{newsLines.download}</p>
+            </a>
 
-                {
-
-                    return (index < 6 ? <div className='newsi'>
-
-                            <a href={newsline.url}>
-
-                                <h2 className='news'> {newsline.title}</h2>
-
-                                <p className='date'>{newsline.publishedAt.toLocaleString('de-DE')}</p>
-
-                                <p className='news'>{newsline.description}</p></a>
-
-                        </div> : null
-
-                    )
-
-                }
-
-                return null;
-
-            }):null
-
-        )
+        </div>
+            )
+        
     }
 
     const Output = () => {
         return (
             <table>
                 <thead>
-                <tr>
-                    <th>Version</th>
-                    <th>Release-Datum</th>
-                    <th>LTS</th>
-                    <th>Support</th>
-                    <th>EOL</th>
-                </tr>
+                    <tr>
+                        <th>Version</th>
+                        <th>Release-Datum</th>
+                        <th>LTS</th>
+                        <th>Support</th>
+                        <th>EOL</th>
+                    </tr>
                 </thead>
 
 
@@ -97,14 +90,15 @@ const Data = () => {
             const response = await fetch(`https://endoflife.date/api/${selectedValue}.json`);
             const data = await response.json();
             setOutputData(data);
-            const wireNews = await fetch(`https://newsapi.org/v2/everything?q=${selectedValue}' new version'&language=en&apiKey=${apikey}`);
+            
+            const wireNews = await fetch(`https://eexpress-server.onrender.com/softwares/${selectedValue}`);
             const data2 = await wireNews.json();
-            setNewsLines(data2.articles);
+            setNewsLines(data2);
             console.log(data2)
 
 
         } catch (error) {
-            console.error('Error fetching or processing data:', error);
+         setNewsLines([])
         }
     };
 
