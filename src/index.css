@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 
-body{
+body {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -13,29 +13,32 @@ body{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-.logo{
+
+.logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#logo{
+
+#logo {
   margin-right: 20px;
   height: 60px;
 }
 
-#root{
+#root {
   width: 100vw;
 }
 
-table{
+table {
   width: 100%;
 }
 
-th, td{
+th,
+td {
   border-bottom: 1px solid;
 }
 
-.nav{
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,37 +46,40 @@ th, td{
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.385);
 }
 
-.buttons{
+.buttons {
   width: 100%;
   display: flex;
 }
 
-.navH1{
+.navH1 {
   font-size: clamp(10px, 2vw, 50px);
 }
-.navH1a{
+
+.navH1a {
   display: none;
 }
 
-.links ul{
+.links ul {
   display: flex;
 }
 
-.links ul a{
+.links ul a {
   text-decoration: none;
   color: black;
 }
-#output{
+
+#output {
   margin-top: 20px;
-  
+
 }
-#output p{
+
+#output p {
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
 }
 
-.homeBase{
+.homeBase {
   width: 100vw;
   height: 100%;
   display: flex;
@@ -81,29 +87,29 @@ th, td{
   align-items: flex-start;
 }
 
-.links ul li{
+.links ul li {
   padding: 0 10px;
   font-size: 2rem;
   list-style: none;
 }
 
-.ausgabe{
+.ausgabe {
   display: flex;
   align-items: flex-start;
   width: 100vw;
 }
 
-.selector{
+.selector {
   margin: 15px;
- width: 50%;
+  width: 50%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  
+
 }
 
-#news{
+#news {
   padding: 10px 30px;
   width: 75%;
   margin: 5px;
@@ -111,27 +117,35 @@ th, td{
 }
 
 
-.newsi h2{
-  font-size: 20px;
+.newsi h2 {
+  font-size: 2rem;
 }
 
-.newsi{
+.newsi p {
+  font-size: 1.8rem;
+}
+
+.newsi {
   padding: 10px 30px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.466);
   width: 100%;
   margin: 5px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
-.newsi a{
+.newsi a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.666);
 }
 
-#progs, #btn1, #btn2{
+#progs,
+#btn1,
+#btn2 {
   font-size: 1.3rem;
   padding: 10px 15px;
-  margin:5px;
+  margin: 5px;
   border: none;
   background-color: white;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.466);
@@ -139,31 +153,35 @@ th, td{
   border-radius: 10px;
 }
 
-#burger{
+#burger {
   display: none;
   background-color: white;
   border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
-#btn1, #btn2{
+
+#btn1,
+#btn2 {
   width: 50%;
   cursor: pointer;
 }
-#btn1:hover, #btn2:hover{
+
+#btn1:hover,
+#btn2:hover {
   background-color: rgba(229, 229, 229, 0.33);
 }
 
 
-.head{
-  font-size: clamp(1vw,1rem, 3vw)
+.head {
+  font-size: clamp(1vw, 1rem, 3vw)
 }
 
-.nav{
-  position:relative;
+.nav {
+  position: relative;
 }
 
-.linker{
+.linker {
   display: none;
   position: absolute;
   top: 80px;
@@ -175,81 +193,100 @@ th, td{
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 
 }
-.linker ul{
-  list-style:none;
+
+.linker ul {
+  list-style: none;
 }
-.linker ul li a{
+
+.linker ul li a {
   text-decoration: none;
   font-size: 2rem;
-  font-weight:bold;
+  font-weight: bold;
   color: white;
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1150px) {
 
-  .homeBase{
+  .homeBase {
     width: 90vw;
     height: 100%;
     justify-content: center;
     margin: 0 auto;
   }
 
-  #news{
+  .newsi h2 {
+    font-size: 1.5rem;
+  }
+  .newsi p {
+    font-size: 1.3rem;
+  }
+
+  #news {
     width: 90%;
     margin-left: 0;
     margin-right: 0;
     padding: 10px 0;
   }
 
-  .selector{
+  .selector {
     width: 90%;
     justify-content: center;
 
   }
 
 
-  .ausgabe{
-width: 100%;
+  .ausgabe {
+    width: 100%;
     flex-direction: column;
     align-items: center;
   }
-  .links{
+
+  .links {
     display: none;
   }
-  .linker{
+
+  .linker {
     display: block;
   }
 
-  .linker ul li{
+  .linker ul li {
     padding: 10px 0;
     width: 100%;
   }
-  .linker ul li a:hover{
-    width:100%;
+
+  .linker ul li a:hover {
+    width: 100%;
     background-color: black;
     color: #f8f5f5;
   }
 
 
-  .linker#hidden{
-    display:none;
+  .linker#hidden {
+    display: none;
   }
-  #burger{
+
+  #burger {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-@media(max-width:800px){
+@media(max-width:800px) {
 
+  .newsi h2 {
+    font-size: 1rem;
+  }
+  .newsi p {
+    font-size: 1rem;
+  }
 
-
-  .navH1{
+  .navH1 {
     display: none
   }
-  .navH1a{
-    display:block;
+
+  .navH1a {
+    display: block;
   }
 
   .logo {
