@@ -48,7 +48,7 @@ const Data = () => {
 
                 return null;
 
-            }):null
+            }):<div><h2>Keine Daten abrufbar</h2></div>
 
         )
     }
