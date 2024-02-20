@@ -91,10 +91,10 @@ const Data = () => {
             const data = await response.json();
             setOutputData(data);
             
-            const wireNews = await fetch(`https://eexpress-server.onrender.com/softwares/${selectedValue}`);
+            const wireNews = await fetch(`https://server.brianhameister.de/softwares/${selectedValue}`);
             const data2 = await wireNews.json();
             setNewsLines(data2);
-            console.log(data2)
+            console.table(data2)
 
 
         } catch (error) {
